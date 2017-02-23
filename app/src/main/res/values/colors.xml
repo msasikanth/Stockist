@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#212121</color>
+    <color name="colorPrimaryDark">#121212</color>
+    <color name="cardBackground">#FAFAFA</color>
+    <color name="colorAccent">#EEFF41</color>
+    <color name="secondAccent">#0091ea</color>
+
+    <color name="background">#E0E0E0</color>
+
+    <color name="material_gray_200">#EEEEEE</color>
+    <color name="material_gray_600">#757575</color>
+    <color name="material_gray_900">#212121</color>
+    <color name="material_white">#fff</color>
+
+    <color name="material_blue_500">#2196F3</color>
+    <color name="material_red_500">#FF1744</color>
+    <color name="material_green_500">#00c853</color>
+
+</resources>

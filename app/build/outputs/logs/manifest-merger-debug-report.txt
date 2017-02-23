@@ -1,0 +1,137 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\sasik\Documents\GitHub\Stocks\app\src\main\AndroidManifest.xml:2:1-48:12
+	package
+		ADDED from C:\Users\sasik\Documents\GitHub\Stocks\app\src\main\AndroidManifest.xml:4:11-44
+		INJECTED from C:\Users\sasik\Documents\GitHub\Stocks\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\sasik\Documents\GitHub\Stocks\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\sasik\Documents\GitHub\Stocks\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\sasik\Documents\GitHub\Stocks\app\src\main\AndroidManifest.xml
+	xmlns:tools
+		ADDED from C:\Users\sasik\Documents\GitHub\Stocks\app\src\main\AndroidManifest.xml:3:11-57
+	xmlns:android
+		ADDED from C:\Users\sasik\Documents\GitHub\Stocks\app\src\main\AndroidManifest.xml:2:11-69
+	android:versionCode
+		INJECTED from C:\Users\sasik\Documents\GitHub\Stocks\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\sasik\Documents\GitHub\Stocks\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from C:\Users\sasik\Documents\GitHub\Stocks\app\src\main\AndroidManifest.xml:6:5-78
+	android:name
+		ADDED from C:\Users\sasik\Documents\GitHub\Stocks\app\src\main\AndroidManifest.xml:6:22-76
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\sasik\Documents\GitHub\Stocks\app\src\main\AndroidManifest.xml:7:5-66
+	android:name
+		ADDED from C:\Users\sasik\Documents\GitHub\Stocks\app\src\main\AndroidManifest.xml:7:22-64
+uses-permission#android.Manifest.permission.RECEIVE_BOOT_COMPLETED
+ADDED from C:\Users\sasik\Documents\GitHub\Stocks\app\src\main\AndroidManifest.xml:8:5-89
+	android:name
+		ADDED from C:\Users\sasik\Documents\GitHub\Stocks\app\src\main\AndroidManifest.xml:8:22-87
+application
+ADDED from C:\Users\sasik\Documents\GitHub\Stocks\app\src\main\AndroidManifest.xml:10:5-46:19
+MERGED from [com.android.support:design:25.1.1] C:\Users\sasik\Documents\GitHub\Stocks\app\build\intermediates\exploded-aar\com.android.support\design\25.1.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:transition:25.1.1] C:\Users\sasik\Documents\GitHub\Stocks\app\build\intermediates\exploded-aar\com.android.support\transition\25.1.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:cardview-v7:25.1.1] C:\Users\sasik\Documents\GitHub\Stocks\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\25.1.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v13:25.1.1] C:\Users\sasik\Documents\GitHub\Stocks\app\build\intermediates\exploded-aar\com.android.support\support-v13\25.1.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:palette-v7:25.1.1] C:\Users\sasik\Documents\GitHub\Stocks\app\build\intermediates\exploded-aar\com.android.support\palette-v7\25.1.1\AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support.constraint:constraint-layout:1.0.0-beta4] C:\Users\sasik\Documents\GitHub\Stocks\app\build\intermediates\exploded-aar\com.android.support.constraint\constraint-layout\1.0.0-beta4\AndroidManifest.xml:9:5-20
+MERGED from [com.jakewharton.timber:timber:4.4.0] C:\Users\sasik\Documents\GitHub\Stocks\app\build\intermediates\exploded-aar\com.jakewharton.timber\timber\4.4.0\AndroidManifest.xml:8:5-20
+MERGED from [com.github.pddstudio:plaid-components:v0.0.1] C:\Users\sasik\Documents\GitHub\Stocks\app\build\intermediates\exploded-aar\com.github.pddstudio\plaid-components\v0.0.1\AndroidManifest.xml:11:5-15:19
+MERGED from [com.android.support:appcompat-v7:25.1.1] C:\Users\sasik\Documents\GitHub\Stocks\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.1.1] C:\Users\sasik\Documents\GitHub\Stocks\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.1.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-vector-drawable:25.1.1] C:\Users\sasik\Documents\GitHub\Stocks\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.1.1\AndroidManifest.xml:23:5-20
+MERGED from [com.android.support:support-v4:25.1.1] C:\Users\sasik\Documents\GitHub\Stocks\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.1.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-fragment:25.1.1] C:\Users\sasik\Documents\GitHub\Stocks\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.1.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:25.1.1] C:\Users\sasik\Documents\GitHub\Stocks\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.1.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:25.1.1] C:\Users\sasik\Documents\GitHub\Stocks\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.1.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:25.1.1] C:\Users\sasik\Documents\GitHub\Stocks\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.1.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:25.1.1] C:\Users\sasik\Documents\GitHub\Stocks\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.1\AndroidManifest.xml:25:5-20
+	android:label
+		ADDED from C:\Users\sasik\Documents\GitHub\Stocks\app\src\main\AndroidManifest.xml:14:13-45
+	android:supportsRtl
+		ADDED from C:\Users\sasik\Documents\GitHub\Stocks\app\src\main\AndroidManifest.xml:15:13-39
+	tools:ignore
+		ADDED from C:\Users\sasik\Documents\GitHub\Stocks\app\src\main\AndroidManifest.xml:17:13-52
+	android:allowBackup
+		ADDED from C:\Users\sasik\Documents\GitHub\Stocks\app\src\main\AndroidManifest.xml:12:13-39
+	android:icon
+		ADDED from C:\Users\sasik\Documents\GitHub\Stocks\app\src\main\AndroidManifest.xml:13:13-47
+	android:theme
+		ADDED from C:\Users\sasik\Documents\GitHub\Stocks\app\src\main\AndroidManifest.xml:16:13-44
+	android:name
+		ADDED from C:\Users\sasik\Documents\GitHub\Stocks\app\src\main\AndroidManifest.xml:11:13-64
+activity#com.primudesigns.stocks.ui.MainActivity
+ADDED from C:\Users\sasik\Documents\GitHub\Stocks\app\src\main\AndroidManifest.xml:19:9-25:20
+	android:name
+		ADDED from C:\Users\sasik\Documents\GitHub\Stocks\app\src\main\AndroidManifest.xml:19:19-73
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from C:\Users\sasik\Documents\GitHub\Stocks\app\src\main\AndroidManifest.xml:20:13-24:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\sasik\Documents\GitHub\Stocks\app\src\main\AndroidManifest.xml:21:17-68
+	android:name
+		ADDED from C:\Users\sasik\Documents\GitHub\Stocks\app\src\main\AndroidManifest.xml:21:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\sasik\Documents\GitHub\Stocks\app\src\main\AndroidManifest.xml:23:17-76
+	android:name
+		ADDED from C:\Users\sasik\Documents\GitHub\Stocks\app\src\main\AndroidManifest.xml:23:27-74
+service#com.primudesigns.stocks.sync.QuoteIntentService
+ADDED from C:\Users\sasik\Documents\GitHub\Stocks\app\src\main\AndroidManifest.xml:27:9-29:43
+	android:exported
+		ADDED from C:\Users\sasik\Documents\GitHub\Stocks\app\src\main\AndroidManifest.xml:29:17-41
+	android:name
+		ADDED from C:\Users\sasik\Documents\GitHub\Stocks\app\src\main\AndroidManifest.xml:28:17-79
+provider#com.primudesigns.stocks.data.StockProvider
+ADDED from C:\Users\sasik\Documents\GitHub\Stocks\app\src\main\AndroidManifest.xml:31:9-34:43
+	android:authorities
+		ADDED from C:\Users\sasik\Documents\GitHub\Stocks\app\src\main\AndroidManifest.xml:33:17-62
+	android:exported
+		ADDED from C:\Users\sasik\Documents\GitHub\Stocks\app\src\main\AndroidManifest.xml:34:17-41
+	android:name
+		ADDED from C:\Users\sasik\Documents\GitHub\Stocks\app\src\main\AndroidManifest.xml:32:17-74
+service#com.primudesigns.stocks.sync.QuoteJobService
+ADDED from C:\Users\sasik\Documents\GitHub\Stocks\app\src\main\AndroidManifest.xml:36:9-40:75
+	android:enabled
+		ADDED from C:\Users\sasik\Documents\GitHub\Stocks\app\src\main\AndroidManifest.xml:38:17-39
+	android:exported
+		ADDED from C:\Users\sasik\Documents\GitHub\Stocks\app\src\main\AndroidManifest.xml:39:17-40
+	android:permission
+		ADDED from C:\Users\sasik\Documents\GitHub\Stocks\app\src\main\AndroidManifest.xml:40:17-73
+	android:name
+		ADDED from C:\Users\sasik\Documents\GitHub\Stocks\app\src\main\AndroidManifest.xml:37:17-76
+activity#com.primudesigns.stocks.ui.DetailActivity
+ADDED from C:\Users\sasik\Documents\GitHub\Stocks\app\src\main\AndroidManifest.xml:42:9-44:57
+	android:theme
+		ADDED from C:\Users\sasik\Documents\GitHub\Stocks\app\src\main\AndroidManifest.xml:44:17-55
+	android:name
+		ADDED from C:\Users\sasik\Documents\GitHub\Stocks\app\src\main\AndroidManifest.xml:43:17-73
+uses-sdk
+INJECTED from C:\Users\sasik\Documents\GitHub\Stocks\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:design:25.1.1] C:\Users\sasik\Documents\GitHub\Stocks\app\build\intermediates\exploded-aar\com.android.support\design\25.1.1\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:transition:25.1.1] C:\Users\sasik\Documents\GitHub\Stocks\app\build\intermediates\exploded-aar\com.android.support\transition\25.1.1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:25.1.1] C:\Users\sasik\Documents\GitHub\Stocks\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\25.1.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:cardview-v7:25.1.1] C:\Users\sasik\Documents\GitHub\Stocks\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\25.1.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v13:25.1.1] C:\Users\sasik\Documents\GitHub\Stocks\app\build\intermediates\exploded-aar\com.android.support\support-v13\25.1.1\AndroidManifest.xml:21:5-23:55
+MERGED from [com.android.support:palette-v7:25.1.1] C:\Users\sasik\Documents\GitHub\Stocks\app\build\intermediates\exploded-aar\com.android.support\palette-v7\25.1.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support.constraint:constraint-layout:1.0.0-beta4] C:\Users\sasik\Documents\GitHub\Stocks\app\build\intermediates\exploded-aar\com.android.support.constraint\constraint-layout\1.0.0-beta4\AndroidManifest.xml:5:5-7:41
+MERGED from [com.jakewharton:butterknife:8.4.0] C:\Users\sasik\Documents\GitHub\Stocks\app\build\intermediates\exploded-aar\com.jakewharton\butterknife\8.4.0\AndroidManifest.xml:5:5-43
+MERGED from [com.jakewharton.timber:timber:4.4.0] C:\Users\sasik\Documents\GitHub\Stocks\app\build\intermediates\exploded-aar\com.jakewharton.timber\timber\4.4.0\AndroidManifest.xml:6:5-43
+MERGED from [com.github.pddstudio:plaid-components:v0.0.1] C:\Users\sasik\Documents\GitHub\Stocks\app\build\intermediates\exploded-aar\com.github.pddstudio\plaid-components\v0.0.1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:25.1.1] C:\Users\sasik\Documents\GitHub\Stocks\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.1\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:25.1.1] C:\Users\sasik\Documents\GitHub\Stocks\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.1.1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.1.1] C:\Users\sasik\Documents\GitHub\Stocks\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.1.1\AndroidManifest.xml:21:5-43
+MERGED from [com.android.databinding:adapters:1.2.1] C:\Users\sasik\Documents\GitHub\Stocks\app\build\intermediates\exploded-aar\com.android.databinding\adapters\1.2.1\AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.databinding:library:1.2.1] C:\Users\sasik\Documents\GitHub\Stocks\app\build\intermediates\exploded-aar\com.android.databinding\library\1.2.1\AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:support-v4:25.1.1] C:\Users\sasik\Documents\GitHub\Stocks\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.1.1\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.1.1] C:\Users\sasik\Documents\GitHub\Stocks\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.1.1\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.1.1] C:\Users\sasik\Documents\GitHub\Stocks\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.1.1\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:25.1.1] C:\Users\sasik\Documents\GitHub\Stocks\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.1.1\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:25.1.1] C:\Users\sasik\Documents\GitHub\Stocks\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.1.1\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:25.1.1] C:\Users\sasik\Documents\GitHub\Stocks\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.1\AndroidManifest.xml:21:5-23:58
+	tools:overrideLibrary
+		ADDED from [com.android.support:design:25.1.1] C:\Users\sasik\Documents\GitHub\Stocks\app\build\intermediates\exploded-aar\com.android.support\design\25.1.1\AndroidManifest.xml:23:9-59
+	android:targetSdkVersion
+		INJECTED from C:\Users\sasik\Documents\GitHub\Stocks\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\sasik\Documents\GitHub\Stocks\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\sasik\Documents\GitHub\Stocks\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\sasik\Documents\GitHub\Stocks\app\src\main\AndroidManifest.xml

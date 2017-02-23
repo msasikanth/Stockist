@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.primudesigns.stocks">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.Manifest.permission.RECEIVE_BOOT_COMPLETED"/>
+
+    <application
+            android:name="com.primudesigns.stocks.StockHawkApp"
+            android:allowBackup="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme"
+            tools:ignore="GoogleAppIndexingWarning">
+
+        <activity android:name="com.primudesigns.stocks.ui.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <service
+                android:name="com.primudesigns.stocks.sync.QuoteIntentService"
+                android:exported="false"/>
+
+        <provider
+                android:name="com.primudesigns.stocks.data.StockProvider"
+                android:authorities="com.primudesigns.stocks"
+                android:exported="false"/>
+
+        <service
+                android:name="com.primudesigns.stocks.sync.QuoteJobService"
+                android:enabled="true"
+                android:exported="true"
+                android:permission="android.permission.BIND_JOB_SERVICE"/>
+
+        <activity
+                android:name="com.primudesigns.stocks.ui.DetailActivity"
+                android:theme="@style/AppTheme.Detail"/>
+
+    </application>
+
+</manifest>

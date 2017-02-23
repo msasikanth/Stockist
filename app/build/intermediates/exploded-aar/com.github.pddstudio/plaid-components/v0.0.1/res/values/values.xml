@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr format="string" name="font"/>
+    <attr format="dimension" name="lineHeightHint"/>
+    <declare-styleable name="BaselineGridTextView"><attr format="float" name="lineHeightMultiplierHint"/><attr name="lineHeightHint"/><attr format="boolean" name="maxLinesByHeight"/></declare-styleable>
+    <declare-styleable name="FontTextAppearance"><attr name="android:textSize"/><attr name="android:textColor"/><attr name="android:fontFamily"/><attr name="font"/></declare-styleable>
+    <declare-styleable name="FontTextView"><attr name="font"/><attr name="android:textAppearance"/></declare-styleable>
+    <string name="app_name">plaid-components</string>
+</resources>

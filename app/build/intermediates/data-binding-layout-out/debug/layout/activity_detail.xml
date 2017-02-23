@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                      
+                                                            
+
+    <android.support.design.widget.CoordinatorLayout
+            android:id="@+id/activity_detail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/cardBackground"
+            android:transitionName="@string/transitions_name"
+            tools:context="com.primudesigns.stocks.ui.DetailActivity" android:tag="layout/activity_detail_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <android.support.design.widget.AppBarLayout
+                android:id="@+id/appBar"
+                android:layout_width="match_parent"
+                android:visibility="visible"
+                android:layout_height="wrap_content"
+                android:background="@color/material_green_500">
+
+            <RelativeLayout
+                    android:id="@+id/mainContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fitsSystemWindows="true"
+                    android:visibility="visible"
+                    android:paddingBottom="16dp">
+
+                <com.pddstudio.plaid.components.BaselineGridTextView
+                        android:id="@+id/name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        tools:text="Google Inc"
+                        android:contentDescription="@string/company_name"
+                        android:layout_marginTop="20dp"
+                        android:textColor="@color/material_white"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Headline"/>
+
+                <com.pddstudio.plaid.components.BaselineGridTextView
+                        android:id="@+id/symbol"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        tools:text="GOOG (NASDAQ)"
+                        android:contentDescription="@string/company_symbol"
+                        android:textColor="@color/material_gray_200"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                        android:layout_below="@+id/name"
+                        android:layout_alignParentStart="true"/>
+
+                <RelativeLayout
+                        android:id="@+id/values"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/symbol"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        >
+
+                    <com.pddstudio.plaid.components.BaselineGridTextView
+                            android:id="@+id/price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            tools:text="135.00"
+                            android:contentDescription="@string/stock_price"
+                            android:textColor="@color/material_white"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Display2"/>
+
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:orientation="horizontal">
+
+                        <com.pddstudio.plaid.components.BaselineGridTextView
+                                android:id="@+id/changeDollar"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="36dp"
+                                tools:text=" 100$ "
+                                android:contentDescription="@string/stock_change_dollar_amount"
+                                android:textColor="@color/material_white"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Body2"/>
+
+                        <com.pddstudio.plaid.components.BaselineGridTextView
+                                android:id="@+id/changePercentage"
+                                android:layout_marginTop="36dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                tools:text=" ( 100% ) "
+                                android:contentDescription="@string/stock_change_percentage"
+                                android:textColor="@color/material_white"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Body2"/>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/stockChart"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="invisible"/>
+
+
+        </android.support.v4.widget.NestedScrollView>
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+         

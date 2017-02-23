@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                           
+                                                       
+
+    <android.support.design.widget.CoordinatorLayout
+            android:id="@+id/mainView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background" android:tag="layout/activity_main_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <android.support.design.widget.AppBarLayout
+                android:id="@+id/appBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_height="?attr/actionBarSize"
+                    android:layout_width="match_parent"
+                    app:layout_scrollFlags="scroll|enterAlwaysCollapsed"
+                    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                    app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+                <com.pddstudio.plaid.components.BaselineGridTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:layout_marginEnd="16dp"
+                        android:text="@string/app_name"
+                        android:textAllCaps="true"
+                        app:font="roboto-mono"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title"/>
+
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.widget.SwipeRefreshLayout
+                android:id="@+id/swipe_refresh"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_margin="16dp"
+                android:onClick="button"
+                android:src="@drawable/fab_plus"
+                app:backgroundTint="@color/colorPrimary"
+                app:borderWidth="0dp"
+                app:elevation="6dp"
+                app:fabSize="normal"
+                android:contentDescription="@string/add_new_stock"
+                app:layout_anchor="@id/recycler_view"
+                app:layout_anchorGravity="bottom|end"
+                app:pressedTranslationZ="12dp"/>
+
+        <TextView
+                android:id="@+id/error"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="16dp"
+                android:textAlignment="center"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:visibility="gone"
+                android:contentDescription="@string/error_message"
+                tools:text="@string/error_message"/>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+         

@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name" translatable="false">Stockist</string>
+
+    <string name="pref_stocks_initialized_key" translatable="false">initialized</string>
+
+    <string name="pref_stocks_key" translatable="false">stocks</string>
+
+
+    <string name="pref_display_mode_key" translatable="false">displayMode</string>
+    <string name="pref_display_mode_default" translatable="false">@string/pref_display_mode_percentage_key</string>
+
+    <string name="pref_display_mode_absolute_key" translatable="false">absolute</string>
+    <string name="pref_display_mode_percentage_key" translatable="false">percentage</string>
+
+    <string name="pref_symbol_validation" translatable="false">symbol</string>
+
+    <string name="default_stocks_google" translatable="false">GOOGL</string>
+    <string name="default_stocks_apple" translatable="false">AAPL</string>
+    <string name="default_stocks_microsoft" translatable="false">MSFT</string>
+    <string name="default_stocks_facebook" translatable="false">FB</string>
+
+
+    <string name="action_change_units" translatable="false">@string/pref_display_mode_key</string>
+
+
+    <string name="dialog_title" translatable="true">Add Stock</string>
+    <string name="dialog_hint" translatable="true">Symbol (e.g. GOOGL)</string>
+    <string name="dialog_cancel" translatable="true">Cancel</string>
+    <string name="dialog_add" translatable="true">Add</string>
+
+    <string name="error_no_network" translatable="true">No network connectivity! Will load stock cursor when the network is available.</string>
+    <string name="error_no_stocks" translatable="true">No stocks added! Hit the floating action button to add one.</string>
+
+    <string name="toast_stock_added_no_connectivity" translatable="true">Symbol %s added. Will refresh when network available.</string>
+    <string name="toast_no_connectivity" translatable="true">Will refresh when network available.</string>
+    <string name="add_new_stock" translatable="true">Add new stock</string>
+    <string name="error_message" translatable="true">Error message</string>
+    <string name="enter_stock_symbol_here" translatable="true">Enter stock symbol here</string>
+    <string name="transitions_name" translatable="true">card</string>
+
+
+    <string name="company_name" translatable="true">company name</string>
+    <string name="company_symbol" translatable="true">company symbol</string>
+    <string name="stock_price" translatable="true">stock price</string>
+    <string name="stock_change_dollar_amount" translatable="true">stock change dollar amount</string>
+    <string name="stock_change_percentage" translatable="true">stock change percentage</string>
+
+</resources>
