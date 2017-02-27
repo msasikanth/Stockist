@@ -167,7 +167,7 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
 
         return new CursorLoader(this,
                 Contract.Quote.URI,
-                Contract.Quote.QUOTE_COLUMNS.toArray(new String[]{}),
+                Contract.Quote.QUOTE_COLUMNS,
                 null, null, Contract.Quote.COLUMN_NAME);
 
     }

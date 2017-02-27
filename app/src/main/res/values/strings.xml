@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:xliff="http://schemas.android.com/tools">>
     <string name="app_name" translatable="false">Stockist</string>
 
     <string name="pref_stocks_initialized_key" translatable="false">initialized</string>
@@ -44,5 +44,9 @@
     <string name="stock_price" translatable="true">stock price</string>
     <string name="stock_change_dollar_amount" translatable="true">stock change dollar amount</string>
     <string name="stock_change_percentage" translatable="true">stock change percentage</string>
+
+    <string name="marker_text">%s<i> on</i> <xliff:g example="5 Jul 2017" id="date">%s</xliff:g></string>
+    <string name="stock_list_is_empty">Stock list is empty</string><!--Ex: - $567 on 5 Jul 2017-->
+
 
 </resources>

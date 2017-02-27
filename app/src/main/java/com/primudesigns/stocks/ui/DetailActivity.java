@@ -11,34 +11,44 @@ import android.support.v4.content.CursorLoader;
 import android.support.v4.content.Loader;
 import android.support.v7.app.AppCompatActivity;
 import android.transition.Transition;
-import android.util.Log;
+import android.util.Pair;
 import android.view.View;
 
+import com.github.mikephil.charting.animation.Easing;
 import com.github.mikephil.charting.charts.LineChart;
+import com.github.mikephil.charting.components.Description;
 import com.github.mikephil.charting.components.XAxis;
 import com.github.mikephil.charting.components.YAxis;
+import com.github.mikephil.charting.data.Entry;
+import com.github.mikephil.charting.data.LineData;
+import com.github.mikephil.charting.data.LineDataSet;
 import com.primudesigns.stocks.R;
 import com.primudesigns.stocks.data.Contract;
 import com.primudesigns.stocks.databinding.ActivityDetailBinding;
+import com.primudesigns.stocks.utils.CustomMarker;
+import com.primudesigns.stocks.utils.Parser;
+import com.primudesigns.stocks.utils.ValueFormatterPrice;
+import com.primudesigns.stocks.utils.ValueFormatterYear;
 
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
+import java.util.List;
 import java.util.Locale;
-
-import timber.log.Timber;
 
 public class DetailActivity extends AppCompatActivity implements LoaderManager.LoaderCallbacks<Cursor> {
 
     private ActivityDetailBinding detailBinding;
     private int position;
+    @ColorInt private int color;
     private static final int CURSOR_LOADER = 14;
+    private String dateFormat = "yyyy";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         detailBinding = DataBindingUtil.setContentView(this, R.layout.activity_detail);
 
-        @ColorInt final int color = getIntent().getExtras().getInt("color");
+        color = getIntent().getExtras().getInt("color");
         position = getIntent().getExtras().getInt("pos");
 
         getSupportLoaderManager().initLoader(CURSOR_LOADER, null, this);
@@ -85,7 +95,7 @@ public class DetailActivity extends AppCompatActivity implements LoaderManager.L
     public Loader<Cursor> onCreateLoader(int id, Bundle args) {
         return new CursorLoader(this,
                 Contract.Quote.URI,
-                Contract.Quote.QUOTE_COLUMNS.toArray(new String[]{}),
+                Contract.Quote.QUOTE_COLUMNS,
                 null, null, Contract.Quote.COLUMN_NAME);
     }
 
@@ -106,9 +116,17 @@ public class DetailActivity extends AppCompatActivity implements LoaderManager.L
             percentageFormat.setMinimumFractionDigits(2);
             percentageFormat.setPositivePrefix("+");
 
-            detailBinding.name.setText(data.getString(data.getColumnIndex(Contract.Quote.COLUMN_NAME)));
-            detailBinding.symbol.setText(data.getString(data.getColumnIndex(Contract.Quote.COLUMN_SYMBOL)) + " ( NASDAQ )");
-            detailBinding.price.setText(dollarFormat.format(data.getFloat(data.getColumnIndex(Contract.Quote.COLUMN_PRICE))));
+            String name = data.getString(data.getColumnIndex(Contract.Quote.COLUMN_NAME));
+            String symbol = data.getString(data.getColumnIndex(Contract.Quote.COLUMN_SYMBOL)) + " ( NASDAQ )";
+            String price = dollarFormat.format(data.getFloat(data.getColumnIndex(Contract.Quote.COLUMN_PRICE)));
+
+
+            detailBinding.name.setText(name);
+            detailBinding.name.setContentDescription(name);
+            detailBinding.symbol.setText(symbol);
+            detailBinding.symbol.setContentDescription(symbol);
+            detailBinding.price.setText(price);
+            detailBinding.price.setContentDescription(price);
 
             float rawAbsoluteChange = data.getFloat(data.getColumnIndex(Contract.Quote.COLUMN_ABSOLUTE_CHANGE));
             float percentageChange = data.getFloat(data.getColumnIndex(Contract.Quote.COLUMN_PERCENTAGE_CHANGE));
@@ -117,26 +135,53 @@ public class DetailActivity extends AppCompatActivity implements LoaderManager.L
             String percentage = percentageFormat.format(percentageChange / 100);
 
             detailBinding.changeDollar.setText(change);
+            detailBinding.changeDollar.setContentDescription(change);
             detailBinding.changePercentage.setText(" ( " + percentage + " )");
+            detailBinding.changePercentage.setContentDescription(percentage);
 
-            Timber.d(data.getString(data.getColumnIndex(Contract.Quote.COLUMN_HISTORY_PRICE)));
+            Pair<Float, List<Entry>> result = Parser.getFormattedStockHistory(data.getString(data.getColumnIndex(Contract.Quote.COLUMN_HISTORY_YEARS)));
 
-            String years = data.getString(data.getColumnIndex(Contract.Quote.COLUMN_HISTORY_YEARS));
-            String price = data.getString(data.getColumnIndex(Contract.Quote.COLUMN_HISTORY_PRICE));
+            List<Entry> entries = result.second;
 
-            String[] yearsArray = years.split(",");
-            String[] priceArray = price.split(",");
+            LineDataSet dataSet = new LineDataSet(entries, "label");
+            dataSet.setDrawCircles(false);
+            dataSet.setLineWidth(0f);
+            dataSet.setMode(LineDataSet.Mode.CUBIC_BEZIER);
+            dataSet.setDrawFilled(true);
+            dataSet.setDrawValues(false);
+            dataSet.setFillColor(color);
+            dataSet.setLabel(null);
+            dataSet.setHighLightColor(Color.TRANSPARENT);
 
-            Log.d("Array", String.valueOf(priceArray.length));
+            LineData lineData = new LineData(dataSet);
+            chart.getXAxis().setPosition(XAxis.XAxisPosition.BOTTOM);
+            chart.getXAxis().setDrawAxisLine(true);
+            chart.getXAxis().setDrawGridLines(false);
+            chart.getXAxis().setValueFormatter(new ValueFormatterYear(dateFormat));
+            chart.getAxis(YAxis.AxisDependency.RIGHT).setDrawLabels(false);
+            chart.getAxis(YAxis.AxisDependency.RIGHT).setDrawGridLines(false);
+            chart.getAxis(YAxis.AxisDependency.RIGHT).setDrawAxisLine(false);
+            chart.getAxis(YAxis.AxisDependency.LEFT).setDrawGridLines(true);
+            chart.getAxis(YAxis.AxisDependency.LEFT).setDrawAxisLine(false);
+            chart.getAxis(YAxis.AxisDependency.LEFT).setValueFormatter(new ValueFormatterPrice());
 
-            XAxis xAxis = chart.getXAxis();
-            xAxis.setDrawAxisLine(true);
-            xAxis.setDrawGridLines(false);
-            xAxis.setPosition(XAxis.XAxisPosition.BOTTOM);
-            xAxis.setValueFormatter(new ValueFormatter(yearsArray));
+            //disable all interactions with the graph
+            chart.setDragEnabled(false);
+            chart.setScaleEnabled(false);
+            chart.setDragDecelerationEnabled(false);
+            chart.setPinchZoom(false);
+            chart.setDoubleTapToZoomEnabled(false);
+            Description description = new Description();
+            description.setText(" ");
+            chart.setDescription(description);
 
-            YAxis yAxis = chart.getAxis(YAxis.AxisDependency.LEFT);
-            yAxis.setValueFormatter(new ValueFormatter(priceArray));
+            CustomMarker customMarkerView = new CustomMarker(getBaseContext(),
+                    R.layout.mark_view, getLastButOneData(entries));
+
+            chart.setMarker(customMarkerView);
+            chart.setData(lineData);
+            chart.invalidate();
+
 
         }
 
@@ -145,6 +190,16 @@ public class DetailActivity extends AppCompatActivity implements LoaderManager.L
     @Override
     public void onLoaderReset(Loader<Cursor> loader) {
     }
+
+
+    private Entry getLastButOneData(List<Entry> entries) {
+        if (entries.size() > 2) {
+            return entries.get(entries.size() - 2);
+        } else {
+            return entries.get(entries.size() - 1);
+        }
+    }
+
 
     private int manipulateColor(int color, float factor) {
         int a = Color.alpha(color);

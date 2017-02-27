@@ -42,7 +42,25 @@
         <activity
                 android:name="com.primudesigns.stocks.ui.DetailActivity"
                 android:theme="@style/AppTheme.Detail"/>
+        
+        <!-- Widget Receivers -->
+        <receiver android:name=".widget.widgetProvider"
+                  android:label="Stockist Widget" >
 
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="com.primudesigns.stocks.ACTION_DATA_UPDATED" />
+            </intent-filter>
+
+
+            <meta-data
+                    android:name="android.appwidget.provider"
+                    android:resource="@xml/widget_provider"/>
+        </receiver>
+
+        <service android:name=".widget.widgetService"
+                 android:exported="false"
+                 android:permission="android.permission.BIND_REMOTEVIEWS"/>
     </application>
 
 </manifest>

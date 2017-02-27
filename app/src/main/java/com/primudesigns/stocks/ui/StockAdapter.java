@@ -112,13 +112,23 @@ class StockAdapter extends RecyclerView.Adapter<StockAdapter.StockViewHolder> {
 
         cursor.moveToPosition(position);
 
-        holder.name.setText(cursor.getString(cursor.getColumnIndex(Contract.Quote.COLUMN_NAME)));
-        holder.symbol.setText(cursor.getString(cursor.getColumnIndex(Contract.Quote.COLUMN_SYMBOL)) + " ( NASDAQ )");
-        holder.price.setText(dollarFormat.format(cursor.getFloat(cursor.getColumnIndex(Contract.Quote.COLUMN_PRICE))));
+        String name = cursor.getString(cursor.getColumnIndex(Contract.Quote.COLUMN_NAME));
+        String symbol = cursor.getString(cursor.getColumnIndex(Contract.Quote.COLUMN_SYMBOL)) + " ( NASDAQ )";
+        String price = dollarFormat.format(cursor.getFloat(cursor.getColumnIndex(Contract.Quote.COLUMN_PRICE)));
 
-        holder.fakeName.setText(cursor.getString(cursor.getColumnIndex(Contract.Quote.COLUMN_NAME)));
-        holder.fakeSymbol.setText(cursor.getString(cursor.getColumnIndex(Contract.Quote.COLUMN_SYMBOL)) + " ( NASDAQ )");
-        holder.fakePrice.setText(dollarFormat.format(cursor.getFloat(cursor.getColumnIndex(Contract.Quote.COLUMN_PRICE))));
+        holder.name.setText(name);
+        holder.name.setContentDescription(name);
+        holder.symbol.setText(symbol);
+        holder.symbol.setContentDescription(symbol);
+        holder.price.setText(price);
+        holder.price.setContentDescription(price);
+
+        holder.fakeName.setText(name);
+        holder.fakeName.setContentDescription(name);
+        holder.fakeSymbol.setText(symbol);
+        holder.fakeSymbol.setContentDescription(symbol);
+        holder.fakePrice.setText(price);
+        holder.fakePrice.setContentDescription(price);
 
         float rawAbsoluteChange = cursor.getFloat(cursor.getColumnIndex(Contract.Quote.COLUMN_ABSOLUTE_CHANGE));
         float percentageChange = cursor.getFloat(cursor.getColumnIndex(Contract.Quote.COLUMN_PERCENTAGE_CHANGE));
@@ -138,10 +148,14 @@ class StockAdapter extends RecyclerView.Adapter<StockAdapter.StockViewHolder> {
         String percentage = percentageFormat.format(percentageChange / 100);
 
         holder.changeDollar.setText(change);
+        holder.changeDollar.setContentDescription(change);
         holder.changePercentage.setText(" ( " + percentage + " )");
+        holder.changePercentage.setContentDescription(percentage);
 
         holder.fakeDollar.setText(change);
+        holder.fakeDollar.setContentDescription(change);
         holder.fakePercentage.setText(" ( " + percentage + " )");
+        holder.fakePercentage.setContentDescription(percentage);
 
     }
 

@@ -1,5 +1,6 @@
 package com.primudesigns.stocks.sync;
 
+import android.annotation.SuppressLint;
 import android.app.job.JobInfo;
 import android.app.job.JobScheduler;
 import android.content.ComponentName;
@@ -16,8 +17,10 @@ import com.primudesigns.stocks.data.Contract;
 import com.primudesigns.stocks.data.PrefUtils;
 
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.Date;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
@@ -34,11 +37,10 @@ import yahoofinance.quotes.stock.StockQuote;
 public final class QuoteSyncJob {
 
     private static final int ONE_OFF_ID = 2;
-    private static final String ACTION_DATA_UPDATED = "com.primudesigns.stocks.ACTION_DATA_UPDATED";
+    public static final String ACTION_DATA_UPDATED = "com.primudesigns.stocks.ACTION_DATA_UPDATED";
     private static final int PERIOD = 300000;
     private static final int INITIAL_BACKOFF = 10000;
     private static final int PERIODIC_ID = 1;
-    private static final int YEARS_OF_HISTORY = 2;
 
 
     private QuoteSyncJob() {
@@ -48,9 +50,11 @@ public final class QuoteSyncJob {
 
         Timber.d("Running sync job");
 
-        Calendar from = Calendar.getInstance();
+
         Calendar to = Calendar.getInstance();
-        from.add(Calendar.YEAR, -YEARS_OF_HISTORY);
+
+        Calendar from = Calendar.getInstance();
+        from.add(Calendar.YEAR, -2);
 
         try {
 
@@ -91,20 +95,8 @@ public final class QuoteSyncJob {
 
                     // WARNING! Don't request historical data for a stock that doesn't exist!
                     // The request will hang forever X_x
-                    List<HistoricalQuote> history = stock.getHistory(from, to, Interval.WEEKLY);
+                    String history = getHistory(stock, from, to, Interval.WEEKLY);
 
-                    StringBuilder historyBuilderYears = new StringBuilder();
-                    StringBuilder historyBuilderPrice = new StringBuilder();
-
-                    for (HistoricalQuote it : history) {
-                        historyBuilderYears.append(it.getDate().getTimeInMillis());
-                        historyBuilderYears.append(",");
-                    }
-
-                    for (HistoricalQuote it : history) {
-                        historyBuilderPrice.append(it.getClose());
-                        historyBuilderPrice.append(",");
-                    }
 
                     String name = stock.getName();
 
@@ -114,12 +106,7 @@ public final class QuoteSyncJob {
                     quoteCV.put(Contract.Quote.COLUMN_PRICE, price);
                     quoteCV.put(Contract.Quote.COLUMN_PERCENTAGE_CHANGE, percentChange);
                     quoteCV.put(Contract.Quote.COLUMN_ABSOLUTE_CHANGE, change);
-
-                    //X-AXIS
-                    quoteCV.put(Contract.Quote.COLUMN_HISTORY_YEARS, historyBuilderYears.toString());
-
-                    //Y-AXIS
-                    quoteCV.put(Contract.Quote.COLUMN_HISTORY_PRICE, historyBuilderPrice.toString());
+                    quoteCV.put(Contract.Quote.COLUMN_HISTORY_YEARS, history);
 
 
                     Timber.d("Change", change + " " + percentChange);
@@ -144,8 +131,7 @@ public final class QuoteSyncJob {
                             Contract.Quote.URI,
                             quoteCVs.toArray(new ContentValues[quoteCVs.size()]));
 
-            Intent dataUpdatedIntent = new Intent(ACTION_DATA_UPDATED);
-            context.sendBroadcast(dataUpdatedIntent);
+            updateWidget(context);
 
         } catch (IOException exception) {
             Timber.e(exception, "Error fetching stock quotes");
@@ -196,6 +182,34 @@ public final class QuoteSyncJob {
 
 
         }
+    }
+
+    private static String getHistory(Stock stock, Calendar from, Calendar to, Interval interval) throws IOException {
+
+        List<HistoricalQuote> history = new ArrayList<>();
+
+        if (interval.equals(Interval.DAILY)) {
+            while (history.size() < 5) {
+                history = stock.getHistory(from, to, interval);
+                from.add(Calendar.DAY_OF_YEAR, -1);
+            }
+        } else {
+            history = stock.getHistory(from, to, interval);
+        }
+
+        StringBuilder historyBuilder = new StringBuilder();
+        for (HistoricalQuote it : history) {
+            historyBuilder.append(it.getDate().getTimeInMillis());
+            historyBuilder.append(":");
+            historyBuilder.append(it.getClose());
+            historyBuilder.append("$");
+        }
+        return historyBuilder.toString();
+    }
+
+    public static void updateWidget(Context context) {
+        Intent dataUpdatedIntent = new Intent(ACTION_DATA_UPDATED);
+        context.sendBroadcast(dataUpdatedIntent);
     }
 
 }
