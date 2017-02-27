@@ -3369,7 +3369,7 @@ containing a value of this type.
         public static final int action_bar_spinner=0x7f0f0001;
         public static final int action_bar_subtitle=0x7f0f004c;
         public static final int action_bar_title=0x7f0f004b;
-        public static final int action_change_units=0x7f0f00c0;
+        public static final int action_change_units=0x7f0f00c1;
         public static final int action_container=0x7f0f00a3;
         public static final int action_context_bar=0x7f0f006f;
         public static final int action_divider=0x7f0f00aa;
@@ -3453,12 +3453,12 @@ containing a value of this type.
         public static final int line1=0x7f0f00b5;
         public static final int line3=0x7f0f00b7;
         public static final int listMode=0x7f0f001b;
-        public static final int list_holder=0x7f0f00bb;
+        public static final int list_holder=0x7f0f00bc;
         public static final int list_item=0x7f0f0052;
         public static final int mainContent=0x7f0f007f;
         public static final int mainView=0x7f0f0087;
         public static final int marker_text=0x7f0f00a2;
-        public static final int masked=0x7f0f00bf;
+        public static final int masked=0x7f0f00c0;
         public static final int media_actions=0x7f0f00a9;
         public static final int middle=0x7f0f0043;
         public static final int mini=0x7f0f0041;
@@ -3481,6 +3481,7 @@ containing a value of this type.
         public static final int price=0x7f0f0083;
         public static final int progress_circular=0x7f0f0009;
         public static final int progress_horizontal=0x7f0f000a;
+        public static final int quote_card=0x7f0f00ba;
         public static final int radio=0x7f0f0067;
         public static final int recycler_view=0x7f0f008a;
         public static final int right=0x7f0f0038;
@@ -3548,10 +3549,10 @@ containing a value of this type.
         public static final int useLogo=0x7f0f0023;
         public static final int values=0x7f0f0082;
         public static final int view_offset_helper=0x7f0f0012;
-        public static final int visible=0x7f0f00be;
-        public static final int widget_empty=0x7f0f00bd;
-        public static final int widget_list=0x7f0f00bc;
-        public static final int widget_name=0x7f0f00ba;
+        public static final int visible=0x7f0f00bf;
+        public static final int widget_empty=0x7f0f00be;
+        public static final int widget_list=0x7f0f00bd;
+        public static final int widget_name=0x7f0f00bb;
         public static final int withText=0x7f0f0048;
         public static final int wrap_content=0x7f0f002f;
     }

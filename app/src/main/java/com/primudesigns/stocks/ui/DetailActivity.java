@@ -39,7 +39,9 @@ public class DetailActivity extends AppCompatActivity implements LoaderManager.L
 
     private ActivityDetailBinding detailBinding;
     private int position;
-    @ColorInt private int color;
+    @ColorInt
+    private int color;
+    private boolean transition;
     private static final int CURSOR_LOADER = 14;
     private String dateFormat = "yyyy";
 
@@ -50,35 +52,43 @@ public class DetailActivity extends AppCompatActivity implements LoaderManager.L
 
         color = getIntent().getExtras().getInt("color");
         position = getIntent().getExtras().getInt("pos");
+        transition = getIntent().getExtras().getBoolean("transition");
 
         getSupportLoaderManager().initLoader(CURSOR_LOADER, null, this);
-        getWindow().getSharedElementEnterTransition().addListener(new Transition.TransitionListener() {
-            @Override
-            public void onTransitionStart(Transition transition) {
 
-            }
+        if (transition) {
+            getWindow().getEnterTransition().addListener(new Transition.TransitionListener() {
+                @Override
+                public void onTransitionStart(Transition transition) {
 
-            @Override
-            public void onTransitionEnd(Transition transition) {
-                getWindow().setStatusBarColor(manipulateColor(color, 0.8f));
-                detailBinding.stockChart.setVisibility(View.VISIBLE);
-            }
+                }
 
-            @Override
-            public void onTransitionCancel(Transition transition) {
+                @Override
+                public void onTransitionEnd(Transition transition) {
+                    getWindow().setStatusBarColor(manipulateColor(color, 0.8f));
+                    detailBinding.stockChart.setVisibility(View.VISIBLE);
+                }
 
-            }
+                @Override
+                public void onTransitionCancel(Transition transition) {
 
-            @Override
-            public void onTransitionPause(Transition transition) {
+                }
 
-            }
+                @Override
+                public void onTransitionPause(Transition transition) {
 
-            @Override
-            public void onTransitionResume(Transition transition) {
+                }
 
-            }
-        });
+                @Override
+                public void onTransitionResume(Transition transition) {
+
+                }
+            });
+
+        } else {
+            getWindow().setStatusBarColor(manipulateColor(color, 0.8f));
+            detailBinding.stockChart.setVisibility(View.VISIBLE);
+        }
         detailBinding.appBar.setBackgroundColor(color);
 
     }

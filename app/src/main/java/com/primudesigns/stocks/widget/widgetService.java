@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Binder;
+import android.support.annotation.ColorInt;
 import android.widget.AdapterView;
 import android.widget.RemoteViews;
 import android.widget.RemoteViewsService;
@@ -29,6 +30,9 @@ public class widgetService extends RemoteViewsService {
     public class ListRemoteView implements RemoteViewsService.RemoteViewsFactory {
 
         private Cursor data = null;
+        @ColorInt
+        private int color;
+
 
         @Override
         public void onCreate() {
@@ -94,23 +98,27 @@ public class widgetService extends RemoteViewsService {
             percentageFormat.setPositivePrefix("+");
 
             if (absoluteChange > 0) {
-                remoteViews.setTextColor(R.id.changeDollar, getResources().getColor(R.color.material_green_500));
-                remoteViews.setTextColor(R.id.changePercentage, getResources().getColor(R.color.material_green_500));
+                remoteViews.setTextColor(R.id.fakeDollar, getResources().getColor(R.color.material_green_500));
+                remoteViews.setTextColor(R.id.fakePercentage, getResources().getColor(R.color.material_green_500));
+                color = getResources().getColor(R.color.material_green_500);
             } else {
-                remoteViews.setTextColor(R.id.changeDollar, getResources().getColor(R.color.material_red_500));
-                remoteViews.setTextColor(R.id.changePercentage, getResources().getColor(R.color.material_red_500));            }
+                remoteViews.setTextColor(R.id.fakeDollar, getResources().getColor(R.color.material_red_500));
+                remoteViews.setTextColor(R.id.fakePercentage, getResources().getColor(R.color.material_red_500));
+                color = getResources().getColor(R.color.material_red_500);
+            }
 
-            remoteViews.setTextViewText(R.id.name, name);
-            remoteViews.setTextViewText(R.id.symbol, stockSymbol);
-            remoteViews.setTextViewText(R.id.price, dollarFormat.format(stockPrice));
-            remoteViews.setTextViewText(R.id.changeDollar, dollarFormatWithPlus.format(absoluteChange));
-            remoteViews.setTextViewText(R.id.changePercentage, "( " + percentageFormat.format(percentageChange / 100) + " )");
+            remoteViews.setTextViewText(R.id.fakename, name);
+            remoteViews.setTextViewText(R.id.fakesymbol, stockSymbol);
+            remoteViews.setTextViewText(R.id.fakeprice, dollarFormat.format(stockPrice));
+            remoteViews.setTextViewText(R.id.fakeDollar, dollarFormatWithPlus.format(absoluteChange));
+            remoteViews.setTextViewText(R.id.fakePercentage, "( " + percentageFormat.format(percentageChange / 100) + " )");
 
 
             final Intent fillInIntent = new Intent();
-            Uri stockUri = Contract.Quote.makeUriForStock(stockSymbol);
-            fillInIntent.setData(stockUri);
-            remoteViews.setOnClickFillInIntent(R.id.card, fillInIntent);
+            fillInIntent.putExtra("pos", position);
+            fillInIntent.putExtra("color", color);
+            remoteViews.setOnClickFillInIntent(R.id.quote_card, fillInIntent);
+
             return remoteViews;
         }
 

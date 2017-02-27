@@ -220,7 +220,7 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
             public void onAnimationEnd(Animator animator) {
 
                 Bundle options = ActivityOptionsCompat.makeSceneTransitionAnimation(MainActivity.this, cardView, getString(R.string.transitions_name)).toBundle();
-                startActivity(new Intent(MainActivity.this, DetailActivity.class).putExtra("color", color).putExtra("pos", position), options);
+                startActivity(new Intent(MainActivity.this, DetailActivity.class).putExtra("color", color).putExtra("pos", position).putExtra("transition", true), options);
                 Timber.d("Symbol clicked: %s", symbol);
                 mainBinding.fab.hide();
             }
