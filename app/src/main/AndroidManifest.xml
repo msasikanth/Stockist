@@ -31,7 +31,7 @@
         <provider
                 android:name="com.primudesigns.stocks.data.StockProvider"
                 android:authorities="com.primudesigns.stocks"
-                android:exported="false"/>
+                android:exported="true"/>
 
         <service
                 android:name="com.primudesigns.stocks.sync.QuoteJobService"

@@ -3,30 +3,66 @@
 
     <item
         is-multidex="true"
-        jar="C:\Users\sasik\Documents\GitHub\Stocks\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.1\jars\classes.jar"
+        jar="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\25.1.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c9649557905bf7a80fca9e0d54cbcb7662627860">
+        <dex dex="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-25.1.1_f159c54f2264cd3ba851842bea33cb29150222f0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\25.1.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a8ae156c2726ac9c56daaf4b49452ec2cdb7bba9">
+        <dex dex="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-cardview-v7-25.1.1_cd4b4ddfb5db68cc4b46c93cc31f8a5b26e5cf5c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.1\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.2"
         sha1="ecb496cc08dd52551fc5ec6db3bc0632e95a89bb">
-        <dex dex="C:\Users\sasik\Documents\GitHub\Stocks\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-25.1.1_674206163dd99d3c941e1f56d816bedd48a819b6\classes.dex" />
+        <dex dex="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-25.1.1_a9ac55fbe83a0ab0061bd45509373f83a41d83bc\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\sasik\Documents\GitHub\Stocks\app\build\intermediates\exploded-aar\com.android.support.constraint\constraint-layout\1.0.0-beta4\jars\classes.jar"
-        jumboMode="false"
+        jar="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.1.1\jars\classes.jar"
+        jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="662d7533b25a666c649c10a16b42edfb95f25a4f">
-        <dex dex="C:\Users\sasik\Documents\GitHub\Stocks\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support.constraint-constraint-layout-1.0.0-beta4_ff432c278fe4441d93a5465d28aef061223f9d07\classes.dex" />
+        sha1="3e04ac8ca644ea7baddf6fdcf72e15c79e9df94a">
+        <dex dex="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-25.1.1_288528aaa3ee5fa4404fddcd979f86a85f60c29d\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\sasik\Documents\GitHub\Stocks\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.1.1\jars\classes.jar"
+        jar="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\exploded-aar\com.jakewharton.timber\timber\4.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="76182d2ede06926e942e5a947a130b915b83a489">
+        <dex dex="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.jakewharton.timber-timber-4.4.0_18a4fcdad3aed33c7e1d709540fe58196e17f0a8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.1.1\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="C:\Users\sasik\Documents\GitHub\Stocks\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-25.1.1_c46cfe75b1275f12ef7bdb13b5885abe19400ac6\classes.dex" />
+        sha1="e2719c102dca3a7a5b02ce07f769362da6ddb4ab">
+        <dex dex="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-25.1.1_81818ea798c25bd0bea0fef7718d8b11f13e49c6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\SDK\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.0-beta4\constraint-layout-solver-1.0.0-beta4.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0a9cb567dc008f570c28531720168f19148da965">
+        <dex dex="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\transforms\dex\debug\folders\1000\10\constraint-layout-solver-1.0.0-beta4_58879b3fee9c9ec7a20933191f9fb7fabc7d9d94\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -35,34 +71,7 @@
         optimize="true"
         revision="25.0.2"
         sha1="614af927df86e3e5b925bb14daed8600886908e8">
-        <dex dex="C:\Users\sasik\Documents\GitHub\Stocks\app\build\intermediates\transforms\dex\debug\folders\1000\10\YahooFinanceAPI-3.5.0_c17db627a5328b1cc50935873a06be65de026cfb\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\sasik\Documents\GitHub\Stocks\app\build\intermediates\exploded-aar\com.github.pddstudio\plaid-components\v0.0.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="1febfef84a3198210acc612d36d97060de44784a">
-        <dex dex="C:\Users\sasik\Documents\GitHub\Stocks\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.github.pddstudio-plaid-components-v0.0.1_caefea554ead2149f818229438106be33a8bb6b8\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\sasik\Documents\GitHub\Stocks\app\build\intermediates\exploded-aar\com.android.support\support-v13\25.1.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="058253c7da6cf5cb545922d07fcc2cd19d5d0ce1">
-        <dex dex="C:\Users\sasik\Documents\GitHub\Stocks\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v13-25.1.1_573bec7966edb34eb414edb673dbc21f9f79104e\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\sasik\Documents\GitHub\Stocks\app\build\intermediates\exploded-aar\com.android.support\design\25.1.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="cd7951e04cfb9a8bf008d544a478d9a8d8192d38">
-        <dex dex="C:\Users\sasik\Documents\GitHub\Stocks\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-25.1.1_86708a14d2010083730d1cd42fed12eaf937f841\classes.dex" />
+        <dex dex="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\transforms\dex\debug\folders\1000\10\YahooFinanceAPI-3.5.0_c17db627a5328b1cc50935873a06be65de026cfb\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -71,7 +80,7 @@
         optimize="true"
         revision="25.0.2"
         sha1="b59b6ee8d6ecc03e672d253800430343493a6ed8">
-        <dex dex="C:\Users\sasik\Documents\GitHub\Stocks\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.1.1_b4b271c0ea54490556319b0c4173e9596861f397\classes.dex" />
+        <dex dex="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.1.1_b4b271c0ea54490556319b0c4173e9596861f397\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -80,52 +89,61 @@
         optimize="true"
         revision="25.0.2"
         sha1="b4b51d1925cdfda98fd861230c1ecb5855500129">
-        <dex dex="C:\Users\sasik\Documents\GitHub\Stocks\app\build\intermediates\transforms\dex\debug\folders\1000\10\baseLibrary-2.2.3_2e490a2129aa5c503e0b8a475ae64c327ffac144\classes.dex" />
+        <dex dex="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\transforms\dex\debug\folders\1000\10\baseLibrary-2.2.3_2e490a2129aa5c503e0b8a475ae64c327ffac144\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\sasik\Documents\GitHub\Stocks\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.1.1\jars\classes.jar"
+        jar="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\exploded-aar\com.android.support.constraint\constraint-layout\1.0.0-beta4\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="662d7533b25a666c649c10a16b42edfb95f25a4f">
+        <dex dex="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support.constraint-constraint-layout-1.0.0-beta4_1d5203c0d51cb04aafec5e17654b400e721b5376\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.1.1\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="0fb891e8f0cfba0513043a7bb357513d229ca2cd">
-        <dex dex="C:\Users\sasik\Documents\GitHub\Stocks\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-25.1.1_44577bc8a3df8fe05e8ef37de8304d5328dd7195\classes.dex" />
+        sha1="7bde4c34162092e0a77e7f12dc85ed77c484cf5c">
+        <dex dex="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-25.1.1_e7437e7e4e4e658923fcaa0a7f1b0f6535f21b74\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\sasik\Documents\GitHub\Stocks\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="02741d05d4b697fba5e279e9881aaa1da0ca7c7f">
-        <dex dex="C:\Users\sasik\Documents\GitHub\Stocks\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-25.1.1_24f48644819f116a4d80ce42c5c7d8ce214f93bb\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\SDK\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.0-beta4\constraint-layout-solver-1.0.0-beta4.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="0a9cb567dc008f570c28531720168f19148da965">
-        <dex dex="C:\Users\sasik\Documents\GitHub\Stocks\app\build\intermediates\transforms\dex\debug\folders\1000\10\constraint-layout-solver-1.0.0-beta4_58879b3fee9c9ec7a20933191f9fb7fabc7d9d94\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\sasik\Documents\GitHub\Stocks\app\build\intermediates\exploded-aar\com.android.databinding\adapters\1.2.1\jars\classes.jar"
+        jar="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\exploded-aar\com.android.databinding\adapters\1.2.1\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.2"
         sha1="c56d29136c2257f63f08c29c4e739efb03b06c7d">
-        <dex dex="C:\Users\sasik\Documents\GitHub\Stocks\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.databinding-adapters-1.2.1_3b0f41bf2a54e9c72e6147097438d7d4e70e2ab4\classes.dex" />
+        <dex dex="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.databinding-adapters-1.2.1_be2cd34c756b6d40151665b014e04c5ff564fb34\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\sasik\Documents\GitHub\Stocks\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.1.1\jars\classes.jar"
+        jar="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.1.1\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="c03bf57f358aa10d253f21989e93bcf6014b3b17">
-        <dex dex="C:\Users\sasik\Documents\GitHub\Stocks\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-25.1.1_1535a035cde4ccee47aefccc5df1c765ab959282\classes.dex" />
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-25.1.1_e0f5a8708537c02fba9ba087175d17d2db19957d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\sasik\.gradle\caches\modules-2\files-2.1\com.jakewharton\butterknife-annotations\8.4.0\ea392375cf9ff59234a82e7928a204215ccc98cd\butterknife-annotations-8.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ea392375cf9ff59234a82e7928a204215ccc98cd">
+        <dex dex="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\transforms\dex\debug\folders\1000\10\butterknife-annotations-8.4.0_d02f4fe28142e24d179863d0911bbf5ba3ab2424\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\exploded-aar\com.android.support\design\25.1.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="cd7951e04cfb9a8bf008d544a478d9a8d8192d38">
+        <dex dex="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-25.1.1_30dcf83a36436546074e7f7ac738c52ffc61569e\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -134,16 +152,259 @@
         optimize="true"
         revision="25.0.2"
         sha1="89507701249388e1ed5ddcf8c41f4ce1be7831ef">
-        <dex dex="C:\Users\sasik\Documents\GitHub\Stocks\app\build\intermediates\transforms\dex\debug\folders\1000\10\guava-20.0_dea08c319679fdb3f17df602d0149dce13ad77ee\classes.dex" />
+        <dex dex="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\transforms\dex\debug\folders\1000\10\guava-20.0_dea08c319679fdb3f17df602d0149dce13ad77ee\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\sasik\Documents\GitHub\Stocks\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.1.1\jars\classes.jar"
+        jar="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\exploded-aar\com.android.support\palette-v7\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="9d5ae39b0de30b0f73c815513024feff3542f36e">
+        <dex dex="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-palette-v7-25.1.1_aa215aca521eccac6999a1d131f2b7f2b40089b4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.1\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.2"
+        sha1="02741d05d4b697fba5e279e9881aaa1da0ca7c7f">
+        <dex dex="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-25.1.1_e5adef00e8aac056d7488ec7951ea29b1401a1a7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\exploded-aar\com.android.support\transition\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="15b049fedbd8e3926bf99d9e45dfc9b2a1043bb9">
+        <dex dex="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-transition-25.1.1_37f1db4232c9bc71d2e9b35a29bbd6ec991da248\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\exploded-aar\com.jakewharton\butterknife\8.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a07818a1ecabdb149998823429cce555af4b9cba">
+        <dex dex="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.jakewharton-butterknife-8.4.0_7790792b94c5fb3e3d1ff0a4a06a6bc54ac4bec6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\sasik\.gradle\caches\modules-2\files-2.1\com.github.PhilJay\MPAndroidChart\v3.0.1\369f9aa48a629b4e92557b37326f42dc3de796e4\MPAndroidChart-v3.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="369f9aa48a629b4e92557b37326f42dc3de796e4">
+        <dex dex="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\transforms\dex\debug\folders\1000\10\MPAndroidChart-v3.0.1_26f66e8f73bc189a994260d175accc8d824906de\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\exploded-aar\com.android.databinding\library\1.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="957dc30b1495f8689271e00d56ab09cc9192df02">
+        <dex dex="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.databinding-library-1.2.1_a8d37f90789ad2829326d9f2b964eb6c4f7bdeb4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\exploded-aar\com.android.support\support-v13\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="058253c7da6cf5cb545922d07fcc2cd19d5d0ce1">
+        <dex dex="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v13-25.1.1_fa3744fa171d1575011d1b98d74ca930af4ff5a5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\sasik\.gradle\caches\modules-2\files-2.1\net.sf.opencsv\opencsv\2.3\c23708cdb9e80a144db433e23344a788a1fd6599\opencsv-2.3.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c23708cdb9e80a144db433e23344a788a1fd6599">
+        <dex dex="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\transforms\dex\debug\folders\1000\10\opencsv-2.3_22b6409471a7b74ce46c5df8311f2b9742024d6b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.1.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0d191c1a09e4892d059e5ce749e4ad4e08129e35">
+        <dex dex="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-25.1.1_693e8b3825fb42a475c20c4b6cdb2e9980059a80\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c03bf57f358aa10d253f21989e93bcf6014b3b17">
+        <dex dex="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-25.1.1_c230e7ad425e7c36ae59752809192368103c143e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\exploded-aar\com.github.pddstudio\plaid-components\v0.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1febfef84a3198210acc612d36d97060de44784a">
+        <dex dex="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.github.pddstudio-plaid-components-v0.0.1_c82961124b2792c57f9a75b649163a8e85a0b179\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0fb891e8f0cfba0513043a7bb357513d229ca2cd">
+        <dex dex="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-25.1.1_7565f1a3b1aae66be540d79ab08709e9ee8ba0fe\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\sasik\.gradle\caches\modules-2\files-2.1\com.yahoofinance-api\YahooFinanceAPI\3.5.0\614af927df86e3e5b925bb14daed8600886908e8\YahooFinanceAPI-3.5.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="614af927df86e3e5b925bb14daed8600886908e8">
+        <dex dex="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\transforms\dex\debug\folders\1000\10\YahooFinanceAPI-3.5.0_c17db627a5328b1cc50935873a06be65de026cfb\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e2719c102dca3a7a5b02ce07f769362da6ddb4ab">
+        <dex dex="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-25.1.1_81818ea798c25bd0bea0fef7718d8b11f13e49c6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-25.1.1_e0f5a8708537c02fba9ba087175d17d2db19957d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c9649557905bf7a80fca9e0d54cbcb7662627860">
+        <dex dex="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-25.1.1_f159c54f2264cd3ba851842bea33cb29150222f0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
         sha1="7bde4c34162092e0a77e7f12dc85ed77c484cf5c">
-        <dex dex="C:\Users\sasik\Documents\GitHub\Stocks\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-25.1.1_af978d6119c51c44c78a8497f01bd813d6f30167\classes.dex" />
+        <dex dex="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-25.1.1_e7437e7e4e4e658923fcaa0a7f1b0f6535f21b74\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ecb496cc08dd52551fc5ec6db3bc0632e95a89bb">
+        <dex dex="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-25.1.1_a9ac55fbe83a0ab0061bd45509373f83a41d83bc\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\exploded-aar\com.android.support.constraint\constraint-layout\1.0.0-beta4\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="662d7533b25a666c649c10a16b42edfb95f25a4f">
+        <dex dex="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support.constraint-constraint-layout-1.0.0-beta4_1d5203c0d51cb04aafec5e17654b400e721b5376\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Program Files\Android\Android Studio1\gradle\m2repository\com\android\databinding\baseLibrary\2.2.3\baseLibrary-2.2.3.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b4b51d1925cdfda98fd861230c1ecb5855500129">
+        <dex dex="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\transforms\dex\debug\folders\1000\10\baseLibrary-2.2.3_2e490a2129aa5c503e0b8a475ae64c327ffac144\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\sasik\.gradle\caches\modules-2\files-2.1\com.google.guava\guava\20.0\89507701249388e1ed5ddcf8c41f4ce1be7831ef\guava-20.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="89507701249388e1ed5ddcf8c41f4ce1be7831ef">
+        <dex dex="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\transforms\dex\debug\folders\1000\10\guava-20.0_dea08c319679fdb3f17df602d0149dce13ad77ee\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\exploded-aar\com.jakewharton.timber\timber\4.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="76182d2ede06926e942e5a947a130b915b83a489">
+        <dex dex="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.jakewharton.timber-timber-4.4.0_18a4fcdad3aed33c7e1d709540fe58196e17f0a8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\exploded-aar\com.android.support\design\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="cd7951e04cfb9a8bf008d544a478d9a8d8192d38">
+        <dex dex="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-25.1.1_30dcf83a36436546074e7f7ac738c52ffc61569e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\SDK\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.0-beta4\constraint-layout-solver-1.0.0-beta4.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0a9cb567dc008f570c28531720168f19148da965">
+        <dex dex="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\transforms\dex\debug\folders\1000\10\constraint-layout-solver-1.0.0-beta4_58879b3fee9c9ec7a20933191f9fb7fabc7d9d94\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a8ae156c2726ac9c56daaf4b49452ec2cdb7bba9">
+        <dex dex="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-cardview-v7-25.1.1_cd4b4ddfb5db68cc4b46c93cc31f8a5b26e5cf5c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.1.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3e04ac8ca644ea7baddf6fdcf72e15c79e9df94a">
+        <dex dex="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-25.1.1_288528aaa3ee5fa4404fddcd979f86a85f60c29d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="02741d05d4b697fba5e279e9881aaa1da0ca7c7f">
+        <dex dex="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-25.1.1_e5adef00e8aac056d7488ec7951ea29b1401a1a7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\exploded-aar\com.android.support\transition\25.1.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="15b049fedbd8e3926bf99d9e45dfc9b2a1043bb9">
+        <dex dex="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-transition-25.1.1_37f1db4232c9bc71d2e9b35a29bbd6ec991da248\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -152,16 +413,34 @@
         optimize="true"
         revision="25.0.2"
         sha1="369f9aa48a629b4e92557b37326f42dc3de796e4">
-        <dex dex="C:\Users\sasik\Documents\GitHub\Stocks\app\build\intermediates\transforms\dex\debug\folders\1000\10\MPAndroidChart-v3.0.1_26f66e8f73bc189a994260d175accc8d824906de\classes.dex" />
+        <dex dex="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\transforms\dex\debug\folders\1000\10\MPAndroidChart-v3.0.1_26f66e8f73bc189a994260d175accc8d824906de\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\sasik\Documents\GitHub\Stocks\app\build\intermediates\exploded-aar\com.android.databinding\library\1.2.1\jars\classes.jar"
+        jar="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\exploded-aar\com.android.support\support-v13\25.1.1\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="957dc30b1495f8689271e00d56ab09cc9192df02">
-        <dex dex="C:\Users\sasik\Documents\GitHub\Stocks\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.databinding-library-1.2.1_422d86ebb2ecf9514aaf1fcc9f42de815a52044d\classes.dex" />
+        sha1="058253c7da6cf5cb545922d07fcc2cd19d5d0ce1">
+        <dex dex="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v13-25.1.1_fa3744fa171d1575011d1b98d74ca930af4ff5a5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.1.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0fb891e8f0cfba0513043a7bb357513d229ca2cd">
+        <dex dex="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-25.1.1_7565f1a3b1aae66be540d79ab08709e9ee8ba0fe\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\exploded-aar\com.android.support\palette-v7\25.1.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="9d5ae39b0de30b0f73c815513024feff3542f36e">
+        <dex dex="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-palette-v7-25.1.1_aa215aca521eccac6999a1d131f2b7f2b40089b4\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -170,79 +449,61 @@
         optimize="true"
         revision="25.0.2"
         sha1="ea392375cf9ff59234a82e7928a204215ccc98cd">
-        <dex dex="C:\Users\sasik\Documents\GitHub\Stocks\app\build\intermediates\transforms\dex\debug\folders\1000\10\butterknife-annotations-8.4.0_d02f4fe28142e24d179863d0911bbf5ba3ab2424\classes.dex" />
+        <dex dex="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\transforms\dex\debug\folders\1000\10\butterknife-annotations-8.4.0_d02f4fe28142e24d179863d0911bbf5ba3ab2424\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\sasik\Documents\GitHub\Stocks\app\build\intermediates\exploded-aar\com.jakewharton\butterknife\8.4.0\jars\classes.jar"
-        jumboMode="false"
+        jar="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\exploded-aar\com.jakewharton\butterknife\8.4.0\jars\classes.jar"
+        jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="a07818a1ecabdb149998823429cce555af4b9cba">
-        <dex dex="C:\Users\sasik\Documents\GitHub\Stocks\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.jakewharton-butterknife-8.4.0_09fe62859292c884ba034d6c0fd99355472b0496\classes.dex" />
+        <dex dex="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.jakewharton-butterknife-8.4.0_7790792b94c5fb3e3d1ff0a4a06a6bc54ac4bec6\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\sasik\Documents\GitHub\Stocks\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\25.1.1\jars\classes.jar"
-        jumboMode="false"
+        jar="D:\SDK\extras\android\m2repository\com\android\support\support-annotations\25.1.1\support-annotations-25.1.1.jar"
+        jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="a8ae156c2726ac9c56daaf4b49452ec2cdb7bba9">
-        <dex dex="C:\Users\sasik\Documents\GitHub\Stocks\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-cardview-v7-25.1.1_608059e142ae60535363a6ea5d7c0e4baab0cdb6\classes.dex" />
+        sha1="b59b6ee8d6ecc03e672d253800430343493a6ed8">
+        <dex dex="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.1.1_b4b271c0ea54490556319b0c4173e9596861f397\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\sasik\Documents\GitHub\Stocks\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.1.1\jars\classes.jar"
-        jumboMode="false"
+        jar="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\exploded-aar\com.android.databinding\adapters\1.2.1\jars\classes.jar"
+        jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="3e04ac8ca644ea7baddf6fdcf72e15c79e9df94a">
-        <dex dex="C:\Users\sasik\Documents\GitHub\Stocks\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-25.1.1_88e66f374d4ad9a79eb423e5ff96a44f5e9f14d4\classes.dex" />
+        sha1="c56d29136c2257f63f08c29c4e739efb03b06c7d">
+        <dex dex="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.databinding-adapters-1.2.1_be2cd34c756b6d40151665b014e04c5ff564fb34\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\sasik\Documents\GitHub\Stocks\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\25.1.1\jars\classes.jar"
-        jumboMode="false"
+        jar="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\exploded-aar\com.github.pddstudio\plaid-components\v0.0.1\jars\classes.jar"
+        jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="c9649557905bf7a80fca9e0d54cbcb7662627860">
-        <dex dex="C:\Users\sasik\Documents\GitHub\Stocks\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-25.1.1_1923a9e0049d0a10f82e3b70ddb24445cb71dffd\classes.dex" />
+        sha1="1febfef84a3198210acc612d36d97060de44784a">
+        <dex dex="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.github.pddstudio-plaid-components-v0.0.1_c82961124b2792c57f9a75b649163a8e85a0b179\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\sasik\Documents\GitHub\Stocks\app\build\intermediates\exploded-aar\com.android.support\palette-v7\25.1.1\jars\classes.jar"
+        jar="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\exploded-aar\com.diogobernardino\williamchart\2.2\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="9d5ae39b0de30b0f73c815513024feff3542f36e">
-        <dex dex="C:\Users\sasik\Documents\GitHub\Stocks\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-palette-v7-25.1.1_67a0e35aa9a31e737f5c95e70276d562de56ed8c\classes.dex" />
+        sha1="1f159979917aba68421fb945854049367d206410">
+        <dex dex="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.diogobernardino-williamchart-2.2_a94e477e3826cca1c3741a5fbc72e9546ccd8c83\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\sasik\Documents\GitHub\Stocks\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.1.1\jars\classes.jar"
-        jumboMode="false"
+        jar="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\exploded-aar\com.android.databinding\library\1.2.1\jars\classes.jar"
+        jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="0d191c1a09e4892d059e5ce749e4ad4e08129e35">
-        <dex dex="C:\Users\sasik\Documents\GitHub\Stocks\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-25.1.1_6ae8be9fc395e3cdbd105482d125164856af733a\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\sasik\Documents\GitHub\Stocks\app\build\intermediates\exploded-aar\com.android.support\transition\25.1.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="15b049fedbd8e3926bf99d9e45dfc9b2a1043bb9">
-        <dex dex="C:\Users\sasik\Documents\GitHub\Stocks\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-transition-25.1.1_d763e722a6f44cbd2f6b59c26863d3d30104fe2c\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\sasik\Documents\GitHub\Stocks\app\build\intermediates\exploded-aar\com.jakewharton.timber\timber\4.4.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="76182d2ede06926e942e5a947a130b915b83a489">
-        <dex dex="C:\Users\sasik\Documents\GitHub\Stocks\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.jakewharton.timber-timber-4.4.0_2f2090d74b78fcc77fb64cb7fd01a110ace5a4f6\classes.dex" />
+        sha1="957dc30b1495f8689271e00d56ab09cc9192df02">
+        <dex dex="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.databinding-library-1.2.1_a8d37f90789ad2829326d9f2b964eb6c4f7bdeb4\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -251,16 +512,25 @@
         optimize="true"
         revision="25.0.2"
         sha1="c23708cdb9e80a144db433e23344a788a1fd6599">
-        <dex dex="C:\Users\sasik\Documents\GitHub\Stocks\app\build\intermediates\transforms\dex\debug\folders\1000\10\opencsv-2.3_22b6409471a7b74ce46c5df8311f2b9742024d6b\classes.dex" />
+        <dex dex="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\transforms\dex\debug\folders\1000\10\opencsv-2.3_22b6409471a7b74ce46c5df8311f2b9742024d6b\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\sasik\Documents\GitHub\Stocks\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.1.1\jars\classes.jar"
+        jar="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.1.1\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="e2719c102dca3a7a5b02ce07f769362da6ddb4ab">
-        <dex dex="C:\Users\sasik\Documents\GitHub\Stocks\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-25.1.1_3c1c8229f2124bfdf85f64aad77c871596c14fc0\classes.dex" />
+        sha1="c03bf57f358aa10d253f21989e93bcf6014b3b17">
+        <dex dex="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-25.1.1_c230e7ad425e7c36ae59752809192368103c143e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0d191c1a09e4892d059e5ce749e4ad4e08129e35">
+        <dex dex="C:\Users\sasik\Documents\GitHub\Stockist\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-25.1.1_693e8b3825fb42a475c20c4b6cdb2e9980059a80\classes.dex" />
     </item>
 
 </items>
