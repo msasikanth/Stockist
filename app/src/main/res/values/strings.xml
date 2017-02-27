@@ -45,8 +45,8 @@
     <string name="stock_change_dollar_amount" translatable="true">stock change dollar amount</string>
     <string name="stock_change_percentage" translatable="true">stock change percentage</string>
 
-    <string name="marker_text">%s<i> on</i> <xliff:g example="5 Jul 2017" id="date">%s</xliff:g></string>
-    <string name="stock_list_is_empty">Stock list is empty</string><!--Ex: - $567 on 5 Jul 2017-->
+    <string name="marker_text" translatable="false">%s<i> on</i> <xliff:g example="5 Jul 2017" id="date">%s</xliff:g></string>
+    <string name="stock_list_is_empty" translatable="true">Stock list is empty</string>
 
 
 </resources>
