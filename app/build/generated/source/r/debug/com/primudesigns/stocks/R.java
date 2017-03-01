@@ -3708,14 +3708,15 @@ containing a value of this type.
         public static final int pref_stocks_key=0x7f080040;
         public static final int pref_symbol_validation=0x7f080041;
         public static final int search_menu_title=0x7f080013;
+        public static final int snackbar_message=0x7f080042;
         public static final int status_bar_notification_info_overflow=0x7f080014;
-        public static final int stock_change_dollar_amount=0x7f080042;
-        public static final int stock_change_percentage=0x7f080043;
-        public static final int stock_list_is_empty=0x7f080044;
-        public static final int stock_price=0x7f080045;
-        public static final int toast_no_connectivity=0x7f080046;
-        public static final int toast_stock_added_no_connectivity=0x7f080047;
-        public static final int transitions_name=0x7f080048;
+        public static final int stock_change_dollar_amount=0x7f080043;
+        public static final int stock_change_percentage=0x7f080044;
+        public static final int stock_list_is_empty=0x7f080045;
+        public static final int stock_price=0x7f080046;
+        public static final int toast_no_connectivity=0x7f080047;
+        public static final int toast_stock_added_no_connectivity=0x7f080048;
+        public static final int transitions_name=0x7f080049;
     }
     public static final class style {
         public static final int AlertDialog_AppCompat=0x7f0a00a2;

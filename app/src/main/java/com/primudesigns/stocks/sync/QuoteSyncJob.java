@@ -79,41 +79,32 @@ public final class QuoteSyncJob {
             while (iterator.hasNext()) {
                 String symbol = iterator.next();
 
-                Stock stock = quotes.get(symbol);
-                StockQuote quote = stock.getQuote();
+                Stock stock;
+                StockQuote quote;
 
+                String name = null;
+                String history = null;
                 float price = 0;
                 float change = 0;
                 float percentChange = 0;
 
-                if (stock.getName() != null) {
+                try {
+
+                    stock = quotes.get(symbol);
+                    quote = stock.getQuote();
 
                     price = quote.getPrice().floatValue();
                     change = quote.getChange().floatValue();
                     percentChange = quote.getChangeInPercent().floatValue();
 
-
                     // WARNING! Don't request historical data for a stock that doesn't exist!
                     // The request will hang forever X_x
-                    String history = getHistory(stock, from, to, Interval.WEEKLY);
+                    history = getHistory(stock, from, to, Interval.WEEKLY);
 
+                    name = stock.getName();
 
-                    String name = stock.getName();
-
-                    ContentValues quoteCV = new ContentValues();
-                    quoteCV.put(Contract.Quote.COLUMN_NAME, name);
-                    quoteCV.put(Contract.Quote.COLUMN_SYMBOL, symbol);
-                    quoteCV.put(Contract.Quote.COLUMN_PRICE, price);
-                    quoteCV.put(Contract.Quote.COLUMN_PERCENTAGE_CHANGE, percentChange);
-                    quoteCV.put(Contract.Quote.COLUMN_ABSOLUTE_CHANGE, change);
-                    quoteCV.put(Contract.Quote.COLUMN_HISTORY_YEARS, history);
-
-
-                    Timber.d("Change", change + " " + percentChange);
-
-                    quoteCVs.add(quoteCV);
-
-                } else {
+                } catch (NullPointerException exception) {
+                    PrefUtils.removeStock(context, symbol);
                     Handler handler = new Handler(Looper.getMainLooper());
                     handler.post(new Runnable() {
                         @Override
@@ -121,8 +112,20 @@ public final class QuoteSyncJob {
                             Toast.makeText(context, "Invalid Symbol, Try again....", Toast.LENGTH_LONG).show();
                         }
                     });
+                    continue;
                 }
 
+                ContentValues quoteCV = new ContentValues();
+                quoteCV.put(Contract.Quote.COLUMN_NAME, name);
+                quoteCV.put(Contract.Quote.COLUMN_SYMBOL, symbol);
+                quoteCV.put(Contract.Quote.COLUMN_PRICE, price);
+                quoteCV.put(Contract.Quote.COLUMN_PERCENTAGE_CHANGE, percentChange);
+                quoteCV.put(Contract.Quote.COLUMN_ABSOLUTE_CHANGE, change);
+                quoteCV.put(Contract.Quote.COLUMN_HISTORY_YEARS, history);
+
+                Timber.d("Change", change + " " + percentChange);
+
+                quoteCVs.add(quoteCV);
 
             }
 

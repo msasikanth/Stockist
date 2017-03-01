@@ -43,6 +43,7 @@ public final class PrefUtils {
 
     private static void editStockPref(Context context, String symbol, Boolean add) {
         String key = context.getString(R.string.pref_stocks_key);
+
         Set<String> stocks = getStocks(context);
 
         if (add) {
@@ -53,6 +54,8 @@ public final class PrefUtils {
 
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
         SharedPreferences.Editor editor = prefs.edit();
+        editor.remove(key);
+        editor.apply();
         editor.putStringSet(key, stocks);
         editor.apply();
     }

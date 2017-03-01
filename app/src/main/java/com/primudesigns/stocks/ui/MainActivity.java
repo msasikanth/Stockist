@@ -1,18 +1,13 @@
 package com.primudesigns.stocks.ui;
 
 import android.animation.Animator;
-import android.animation.AnimatorListenerAdapter;
-import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
-import android.content.IntentFilter;
-import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.databinding.DataBindingUtil;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
-import android.preference.PreferenceManager;
 import android.support.annotation.ColorInt;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.ActivityOptionsCompat;
@@ -36,8 +31,6 @@ import com.primudesigns.stocks.data.Contract;
 import com.primudesigns.stocks.data.PrefUtils;
 import com.primudesigns.stocks.databinding.ActivityMainBinding;
 import com.primudesigns.stocks.sync.QuoteSyncJob;
-
-import java.util.Objects;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -108,8 +101,10 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
             public void onSwiped(RecyclerView.ViewHolder viewHolder, int direction) {
                 String symbol = adapter.getSymbolAtPosition(viewHolder.getAdapterPosition());
                 PrefUtils.removeStock(MainActivity.this, symbol);
+
                 getContentResolver().delete(Contract.Quote.makeUriForStock(symbol), null, null);
-                Snackbar.make(mainBinding.mainView, "The stock item has been removed", Snackbar.LENGTH_LONG).show();
+                QuoteSyncJob.updateWidget(getBaseContext());
+                Snackbar.make(mainBinding.mainView, R.string.snackbar_message, Snackbar.LENGTH_LONG).show();
             }
         }).attachToRecyclerView(stockRecyclerView);
 

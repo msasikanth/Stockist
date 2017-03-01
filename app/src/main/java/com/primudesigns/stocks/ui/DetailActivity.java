@@ -57,38 +57,48 @@ public class DetailActivity extends AppCompatActivity implements LoaderManager.L
         getSupportLoaderManager().initLoader(CURSOR_LOADER, null, this);
 
         if (transition) {
-            getWindow().getEnterTransition().addListener(new Transition.TransitionListener() {
-                @Override
-                public void onTransitionStart(Transition transition) {
 
-                }
+            if (savedInstanceState != null) {
 
-                @Override
-                public void onTransitionEnd(Transition transition) {
-                    getWindow().setStatusBarColor(manipulateColor(color, 0.8f));
-                    detailBinding.stockChart.setVisibility(View.VISIBLE);
-                }
+                getWindow().setStatusBarColor(manipulateColor(color, 0.8f));
+                detailBinding.stockChart.setVisibility(View.VISIBLE);
 
-                @Override
-                public void onTransitionCancel(Transition transition) {
+            } else {
 
-                }
+                getWindow().getEnterTransition().addListener(new Transition.TransitionListener() {
+                    @Override
+                    public void onTransitionStart(Transition transition) {
 
-                @Override
-                public void onTransitionPause(Transition transition) {
+                    }
 
-                }
+                    @Override
+                    public void onTransitionEnd(Transition transition) {
+                        getWindow().setStatusBarColor(manipulateColor(color, 0.8f));
+                        detailBinding.stockChart.setVisibility(View.VISIBLE);
+                    }
 
-                @Override
-                public void onTransitionResume(Transition transition) {
+                    @Override
+                    public void onTransitionCancel(Transition transition) {
 
-                }
-            });
+                    }
+
+                    @Override
+                    public void onTransitionPause(Transition transition) {
+
+                    }
+
+                    @Override
+                    public void onTransitionResume(Transition transition) {
+
+                    }
+                });
+            }
 
         } else {
             getWindow().setStatusBarColor(manipulateColor(color, 0.8f));
             detailBinding.stockChart.setVisibility(View.VISIBLE);
         }
+
         detailBinding.appBar.setBackgroundColor(color);
 
     }

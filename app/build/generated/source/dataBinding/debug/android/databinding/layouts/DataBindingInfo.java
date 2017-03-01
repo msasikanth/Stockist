@@ -2,5 +2,5 @@ package android.databinding.layouts;
 
 import android.databinding.BindingBuildInfo;
 
-@BindingBuildInfo(buildId="b35d90f5-79f6-4f57-bbd9-8ffcebfa62b9", modulePackage="com.primudesigns.stocks", sdkRoot="D:\\SDK",layoutInfoDir="C:\\Users\\sasik\\Documents\\GitHub\\Stockist\\app\\build\\intermediates\\data-binding-info\\debug",exportClassListTo="",isLibrary=false,minSdk=21,enableDebugLogs=false,printEncodedError=true)
+@BindingBuildInfo(buildId="05406522-6d5a-40a1-8473-e1a95e63717d", modulePackage="com.primudesigns.stocks", sdkRoot="D:\\SDK",layoutInfoDir="C:\\Users\\sasik\\Documents\\GitHub\\Stockist\\app\\build\\intermediates\\data-binding-info\\debug",exportClassListTo="",isLibrary=false,minSdk=21,enableDebugLogs=false,printEncodedError=true)
 public class DataBindingInfo {}

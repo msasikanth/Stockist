@@ -47,6 +47,7 @@
 
     <string name="marker_text" translatable="false">%s<i> on</i> <xliff:g example="5 Jul 2017" id="date">%s</xliff:g></string>
     <string name="stock_list_is_empty" translatable="true">Stock list is empty</string>
+    <string name="snackbar_message" translatable="true">The stock item has been removed</string>
 
 
 </resources>

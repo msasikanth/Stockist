@@ -45,6 +45,7 @@
                 android:padding="8dp"
                 android:gravity="center"
                 android:visibility="gone"
+                android:textColor="@color/material_white"
                 android:text="@string/stock_list_is_empty"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
 
